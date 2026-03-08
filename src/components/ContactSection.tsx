@@ -47,7 +47,15 @@ const ContactSection = () => {
                 <Mail className="w-5 h-5 text-accent mt-1 shrink-0" />
                 <div>
                   <p className="font-body text-sm font-medium text-foreground">Email</p>
-                  <p className="font-body text-sm text-muted-foreground">hello@designcubedc.com</p>
+                  <p className="font-body text-sm text-muted-foreground">designcube.dc@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Instagram className="w-5 h-5 text-accent mt-1 shrink-0" />
+                <div>
+                  <p className="font-body text-sm font-medium text-foreground">Instagram</p>
+                  <a href="https://instagram.com/design_cube_143" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-accent transition-colors">@design_cube_143</a>
                 </div>
               </div>
             </div>
