@@ -4,12 +4,16 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
+import project5 from "@/assets/project-5.jpg";
+import project6 from "@/assets/project-6.jpg";
 
 const projects = [
   { image: project1, title: "Modern Villa", category: "Residential" },
   { image: project2, title: "Luxury Kitchen", category: "Interior" },
   { image: project3, title: "Corporate Hub", category: "Commercial" },
   { image: project4, title: "Spa Bathroom", category: "Interior" },
+  { image: project5, title: "Floor Planning", category: "Planning" },
+  { image: project6, title: "Elevation Designs", category: "Architecture" },
 ];
 
 const ProjectsSection = () => {
