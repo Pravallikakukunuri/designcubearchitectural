@@ -52,8 +52,7 @@ const ContactSection = () => {
                 <div>
                   <p className="font-body text-sm font-medium text-foreground">Location</p>
                   <p className="font-body text-sm text-muted-foreground">
-                    Satya Narayana Nagar, Ramalingeswara Nagar,<br />
-                    Vijayawada, Andhra Pradesh 520013, India
+                    Hyderabad, Vijayawada
                   </p>
                 </div>
               </div>
