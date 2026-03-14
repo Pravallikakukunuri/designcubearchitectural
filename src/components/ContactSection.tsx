@@ -52,8 +52,7 @@ const ContactSection = () => {
                 <div>
                   <p className="font-body text-sm font-medium text-foreground">Location</p>
                   <p className="font-body text-sm text-muted-foreground">
-                    Satya Narayana Nagar, Ramalingeswara Nagar,<br />
-                    Vijayawada, Andhra Pradesh 520013, India
+                    Hyderabad, Vijayawada
                   </p>
                 </div>
               </div>
@@ -63,8 +62,8 @@ const ContactSection = () => {
                 <div>
                   <p className="font-body text-sm font-medium text-foreground">Working Hours</p>
                   <p className="font-body text-sm text-muted-foreground">
-                    Monday – Saturday: 9:00 AM – 6:00 PM<br />
-                    Sunday: Closed
+                    Monday – Saturday: 10:00 AM – 8:00 PM<br />
+                    Sunday: 10:30 AM – 6:00 PM
                   </p>
                 </div>
               </div>
@@ -81,7 +80,7 @@ const ContactSection = () => {
                 <Instagram className="w-5 h-5 text-accent mt-1 shrink-0" />
                 <div>
                   <p className="font-body text-sm font-medium text-foreground">Instagram</p>
-                  <a href="https://instagram.com/design_cube_143" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-accent transition-colors">@design_cube_143</a>
+                  <a href="https://instagram.com/DESIGN_CUBE_DC" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-accent transition-colors">@DESIGN_CUBE_DC</a>
                 </div>
               </div>
             </div>
