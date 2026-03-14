@@ -33,7 +33,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="font-body text-primary-foreground/80 mt-6 max-w-lg text-base md:text-lg"
         >
-          Transforming visions into architectural masterpieces in Vijayawada and beyond.
+          Transforming visions into architectural masterpieces in Hyderabad and beyond.
         </motion.p>
         <motion.a
           href="#projects"

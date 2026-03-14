@@ -27,7 +27,7 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <p className="font-body text-muted-foreground leading-relaxed text-base mb-6">
-              Design Cube.DC is a premier architectural design studio based in Vijayawada, Andhra Pradesh. We specialize in creating spaces that harmonize modern aesthetics with practical living.
+              Design Cube.DC is a premier architectural design studio based in Hyderabad, Telangana. We specialize in creating spaces that harmonize modern aesthetics with practical living.
             </p>
             <p className="font-body text-muted-foreground leading-relaxed text-base mb-8">
               Our team brings together creativity, precision, and deep understanding of materials to deliver residential and commercial projects that exceed expectations. Every line we draw is intentional, every space we shape tells a story.
