@@ -62,8 +62,8 @@ const ContactSection = () => {
                 <div>
                   <p className="font-body text-sm font-medium text-foreground">Working Hours</p>
                   <p className="font-body text-sm text-muted-foreground">
-                    Monday – Saturday: 9:00 AM – 6:00 PM<br />
-                    Sunday: Closed
+                    Monday – Saturday: 10:00 AM – 8:00 PM<br />
+                    Sunday: 10:30 AM – 6:00 PM
                   </p>
                 </div>
               </div>
