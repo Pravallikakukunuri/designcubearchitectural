@@ -6,7 +6,7 @@ const Footer = () => (
       <p className="font-display text-lg text-primary-foreground">
         Design Cube<span className="text-accent">.DC</span>
       </p>
-      <div className="flex items-center gap-6 text-primary-foreground/70">
+      <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-primary-foreground/70">
         <a href="tel:+917013130143" className="flex items-center gap-2 font-body text-xs hover:text-accent transition-colors">
           <Phone className="w-3.5 h-3.5" /> +91 7013130143
         </a>
