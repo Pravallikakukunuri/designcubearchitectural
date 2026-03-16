@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Compass, Home, Building2, Palette } from "lucide-react";
+import { Compass, Home, Building2, Palette, LayoutPanelTop, Wrench } from "lucide-react";
 
 const services = [
   {
@@ -23,6 +23,16 @@ const services = [
     title: "Renovation & Remodeling",
     description: "Breathing new life into existing spaces with innovative redesign and structural improvements.",
   },
+  {
+    icon: LayoutPanelTop,
+    title: "Floor Planning",
+    description: "Detailed and efficient floor plans designed to maximize space utilization and flow for every type of property.",
+  },
+  {
+    icon: Wrench,
+    title: "MEP & Structural Design",
+    description: "Comprehensive mechanical, electrical, plumbing, and structural engineering solutions for safe and efficient buildings.",
+  },
 ];
 
 const ServicesSection = () => {
@@ -44,7 +54,7 @@ const ServicesSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <motion.div
               key={service.title}
