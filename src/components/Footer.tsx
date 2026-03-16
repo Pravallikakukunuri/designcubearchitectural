@@ -18,7 +18,7 @@ const Footer = () => (
         </a>
       </div>
       <p className="font-body text-xs text-primary-foreground/50">
-        © {new Date().getFullYear()} Design Cube.DC. All rights reserved.
+        © {new Date().getFullYear()} welcome@designcube.dc All rights reserved.
       </p>
     </div>
   </footer>
