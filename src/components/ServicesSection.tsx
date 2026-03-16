@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Compass, Home, Building2, Palette } from "lucide-react";
+import { Compass, Home, Building2, Palette, LayoutPanelTop, Wrench } from "lucide-react";
 
 const services = [
   {
@@ -22,6 +22,16 @@ const services = [
     icon: Palette,
     title: "Renovation & Remodeling",
     description: "Breathing new life into existing spaces with innovative redesign and structural improvements.",
+  },
+  {
+    icon: LayoutPanelTop,
+    title: "Floor Planning",
+    description: "Detailed and efficient floor plans designed to maximize space utilization and flow for every type of property.",
+  },
+  {
+    icon: Wrench,
+    title: "MEP & Structural Design",
+    description: "Comprehensive mechanical, electrical, plumbing, and structural engineering solutions for safe and efficient buildings.",
   },
 ];
 
