@@ -144,7 +144,7 @@ const ProjectsSection = () => {
             </button>
 
             <div className="absolute bottom-6 flex gap-2">
-              {architectureGallery.map((_, idx) => (
+              {activeGallery.map((_, idx) => (
                 <button
                   key={idx}
                   onClick={(e) => { e.stopPropagation(); setCurrentImage(idx); }}
