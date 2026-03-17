@@ -97,7 +97,7 @@ const ProjectsSection = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: i * 0.15 }}
                 className="group relative overflow-hidden cursor-pointer"
-                onClick={() => handleProjectClick(project.category)}
+                onClick={() => handleProjectClick(project.title, project.category)}
               >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
