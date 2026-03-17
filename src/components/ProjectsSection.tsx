@@ -130,8 +130,8 @@ const ProjectsSection = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              src={architectureGallery[currentImage]}
-              alt={`Architecture project ${currentImage + 1}`}
+              src={activeGallery[currentImage]}
+              alt={`Project ${currentImage + 1}`}
               className="max-h-[85vh] max-w-[90vw] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
             />
