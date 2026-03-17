@@ -45,6 +45,7 @@ const ProjectsSection = () => {
   const galleries: Record<string, string[]> = {
     Architecture: architectureGallery,
     Planning: planningGallery,
+    Interior: interiorGallery,
   };
 
   const handleProjectClick = (category: string) => {
