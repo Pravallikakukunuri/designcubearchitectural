@@ -21,10 +21,21 @@ import floor4 from "@/assets/floor-4.png";
 import floor5 from "@/assets/floor-5.png";
 import kitchen1 from "@/assets/kitchen-1.png";
 import kitchen2 from "@/assets/kitchen-2.png";
+import living1 from "@/assets/living-1.png";
+import living2 from "@/assets/living-2.png";
+import living3 from "@/assets/living-3.png";
+import living4 from "@/assets/living-4.png";
+import living5 from "@/assets/living-5.png";
+import living6 from "@/assets/living-6.png";
+import living7 from "@/assets/living-7.png";
+import living8 from "@/assets/living-8.png";
+import living9 from "@/assets/living-9.png";
+import living10 from "@/assets/living-10.png";
 
 const architectureGallery = [arch1, arch2, arch3, arch4, arch5, arch6, arch7];
 const planningGallery = [floor1, floor2, floor3, floor4, floor5];
 const interiorGallery = [kitchen1, kitchen2];
+const livingAreaGallery = [living1, living2, living3, living4, living5, living6, living7, living8, living9, living10];
 
 const projects = [
   { image: project1, title: "Modern Residential Complex", category: "Residential" },
