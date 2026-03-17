@@ -19,9 +19,12 @@ import floor2 from "@/assets/floor-2.png";
 import floor3 from "@/assets/floor-3.png";
 import floor4 from "@/assets/floor-4.png";
 import floor5 from "@/assets/floor-5.png";
+import kitchen1 from "@/assets/kitchen-1.png";
+import kitchen2 from "@/assets/kitchen-2.png";
 
 const architectureGallery = [arch1, arch2, arch3, arch4, arch5, arch6, arch7];
 const planningGallery = [floor1, floor2, floor3, floor4, floor5];
+const interiorGallery = [kitchen1, kitchen2];
 
 const projects = [
   { image: project1, title: "Modern Residential Complex", category: "Residential" },
@@ -42,6 +45,7 @@ const ProjectsSection = () => {
   const galleries: Record<string, string[]> = {
     Architecture: architectureGallery,
     Planning: planningGallery,
+    Interior: interiorGallery,
   };
 
   const handleProjectClick = (category: string) => {
