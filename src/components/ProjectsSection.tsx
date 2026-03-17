@@ -57,11 +57,14 @@ const ProjectsSection = () => {
     Architecture: architectureGallery,
     Planning: planningGallery,
     Interior: interiorGallery,
+    "Living Area": livingAreaGallery,
   };
 
-  const handleProjectClick = (category: string) => {
-    if (galleries[category]) {
-      setActiveGallery(galleries[category]);
+  const handleProjectClick = (title: string, category: string) => {
+    const selectedGallery = galleries[title] ?? galleries[category];
+
+    if (selectedGallery) {
+      setActiveGallery(selectedGallery);
       setCurrentImage(0);
       setGalleryOpen(true);
     }
