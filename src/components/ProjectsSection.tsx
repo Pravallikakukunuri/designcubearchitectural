@@ -37,16 +37,23 @@ const ProjectsSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
+  const [activeGallery, setActiveGallery] = useState<string[]>([]);
+
+  const galleries: Record<string, string[]> = {
+    Architecture: architectureGallery,
+    Planning: planningGallery,
+  };
 
   const handleProjectClick = (category: string) => {
-    if (category === "Architecture") {
+    if (galleries[category]) {
+      setActiveGallery(galleries[category]);
       setCurrentImage(0);
       setGalleryOpen(true);
     }
   };
 
-  const nextImage = () => setCurrentImage((prev) => (prev + 1) % architectureGallery.length);
-  const prevImage = () => setCurrentImage((prev) => (prev - 1 + architectureGallery.length) % architectureGallery.length);
+  const nextImage = () => setCurrentImage((prev) => (prev + 1) % activeGallery.length);
+  const prevImage = () => setCurrentImage((prev) => (prev - 1 + activeGallery.length) % activeGallery.length);
 
   return (
     <>
