@@ -18,6 +18,7 @@ const Index = () => (
     <ContactSection />
     <Footer />
     <WelcomeContactPopup />
+    <FloatingSocialBar />
   </>
 );
 
