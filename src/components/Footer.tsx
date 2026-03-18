@@ -13,8 +13,8 @@ const Footer = () => (
         <a href="mailto:designcube.dc@gmail.com" className="flex items-center gap-2 font-body text-xs hover:text-accent transition-colors">
           <Mail className="w-3.5 h-3.5" /> designcube.dc@gmail.com
         </a>
-        <a href="https://instagram.com/DESIGN_CUBE_DC" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-body text-xs hover:text-accent transition-colors">
-          <Instagram className="w-3.5 h-3.5" /> @DESIGN_CUBE_DC
+        <a href="https://instagram.com/design_cube_dc" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-body text-xs hover:text-accent transition-colors">
+          <Instagram className="w-3.5 h-3.5" /> @design_cube_dc
         </a>
       </div>
       <p className="font-body text-xs text-primary-foreground/50">

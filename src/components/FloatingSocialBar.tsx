@@ -23,7 +23,7 @@ const FloatingSocialBar = () => {
         <Instagram size={22} />
       </a>
       <a
-        href="tel:+919999999999"
+        href="tel:+917013130143"
         className="w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
         aria-label="Call Us"
       >
