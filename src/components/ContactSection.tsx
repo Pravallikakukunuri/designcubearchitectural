@@ -80,7 +80,7 @@ const ContactSection = () => {
                 <Instagram className="w-5 h-5 text-accent mt-1 shrink-0" />
                 <div>
                   <p className="font-body text-sm font-medium text-foreground">Instagram</p>
-                  <a href="https://instagram.com/design_cube" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-accent transition-colors">@design_cube</a>
+                  <a href="https://instagram.com/design_cube_dc" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-accent transition-colors">@design_cube_dc</a>
                 </div>
               </div>
             </div>
