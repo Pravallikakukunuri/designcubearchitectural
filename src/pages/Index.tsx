@@ -5,6 +5,7 @@ import ServicesSection from "@/components/ServicesSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import WelcomeContactPopup from "@/components/WelcomeContactPopup";
 
 const Index = () => (
   <>
@@ -15,6 +16,7 @@ const Index = () => (
     <ProjectsSection />
     <ContactSection />
     <Footer />
+    <WelcomeContactPopup />
   </>
 );
 

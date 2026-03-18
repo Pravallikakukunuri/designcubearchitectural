@@ -58,6 +58,8 @@ const ProjectsSection = () => {
     Planning: planningGallery,
     Interior: interiorGallery,
     "Living Area": livingAreaGallery,
+    Residential: [project1],
+    Commercial: [project3],
   };
 
   const handleProjectClick = (title: string, category: string) => {
