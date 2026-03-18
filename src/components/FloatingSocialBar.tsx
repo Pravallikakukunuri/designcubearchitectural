@@ -5,7 +5,7 @@ const FloatingSocialBar = () => {
   return (
     <div className="fixed right-4 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3">
       <a
-        href="https://wa.me/919999999999"
+        href="https://wa.me/917013130143"
         target="_blank"
         rel="noopener noreferrer"
         className="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
