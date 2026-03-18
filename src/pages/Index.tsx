@@ -6,6 +6,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WelcomeContactPopup from "@/components/WelcomeContactPopup";
+import FloatingSocialBar from "@/components/FloatingSocialBar";
 
 const Index = () => (
   <>
@@ -17,6 +18,7 @@ const Index = () => (
     <ContactSection />
     <Footer />
     <WelcomeContactPopup />
+    <FloatingSocialBar />
   </>
 );
 
