@@ -21,6 +21,10 @@ import floor4 from "@/assets/floor-4.png";
 import floor5 from "@/assets/floor-5.png";
 import kitchen1 from "@/assets/kitchen-1.png";
 import kitchen2 from "@/assets/kitchen-2.png";
+import kitchen3 from "@/assets/kitchen-3.png";
+import kitchen4 from "@/assets/kitchen-4.png";
+import kitchen5 from "@/assets/kitchen-5.png";
+import kitchen6 from "@/assets/kitchen-6.png";
 import living1 from "@/assets/living-1.png";
 import living2 from "@/assets/living-2.png";
 import living3 from "@/assets/living-3.png";
@@ -31,11 +35,18 @@ import living7 from "@/assets/living-7.png";
 import living8 from "@/assets/living-8.png";
 import living9 from "@/assets/living-9.png";
 import living10 from "@/assets/living-10.png";
+import residential1 from "@/assets/residential-1.png";
+import residential2 from "@/assets/residential-2.png";
+import residential3 from "@/assets/residential-3.png";
+import residential4 from "@/assets/residential-4.png";
+import residential5 from "@/assets/residential-5.png";
+import residential6 from "@/assets/residential-6.png";
 
 const architectureGallery = [arch1, arch2, arch3, arch4, arch5, arch6, arch7];
 const planningGallery = [floor1, floor2, floor3, floor4, floor5];
-const interiorGallery = [kitchen1, kitchen2];
+const interiorGallery = [kitchen1, kitchen2, kitchen3, kitchen4, kitchen5, kitchen6];
 const livingAreaGallery = [living1, living2, living3, living4, living5, living6, living7, living8, living9, living10];
+const residentialGallery = [project1, residential1, residential2, residential3, residential4, residential5, residential6];
 
 const projects = [
   { image: project1, title: "Modern Residential Complex", category: "Residential" },
@@ -58,7 +69,7 @@ const ProjectsSection = () => {
     Planning: planningGallery,
     Interior: interiorGallery,
     "Living Area": livingAreaGallery,
-    Residential: [project1],
+    Residential: residentialGallery,
     Commercial: [project3],
   };
 
