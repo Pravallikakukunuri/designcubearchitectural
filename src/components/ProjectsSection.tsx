@@ -39,10 +39,10 @@ const livingAreaGallery = [living1, living2, living3, living4, living5, living6,
 
 const projects = [
   { image: project1, title: "Modern Residential Complex", category: "Residential" },
-  { image: project2, title: "Luxury Kitchen", category: "Interior" },
+  { image: project2, title: "Modular Kitchen", category: "Interior" },
   { image: project3, title: "Office Space Design", category: "Commercial" },
   { image: project4, title: "Living Area", category: "Interior" },
-  { image: project5, title: "Floor Planning", category: "Planning" },
+  { image: project5, title: "Floor Plan", category: "Planning" },
   { image: project6, title: "Elevation Designs", category: "Architecture" },
 ];
 
@@ -85,7 +85,7 @@ const ProjectsSection = () => {
             transition={{ duration: 0.7 }}
             className="text-center mb-16"
           >
-            <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">Portfolio</p>
+            <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">About Us</p>
             <h2 className="font-display text-3xl md:text-5xl font-medium text-foreground">
               Featured Projects
             </h2>
