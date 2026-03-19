@@ -16,8 +16,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <a href="#home" className="font-display text-2xl font-semibold tracking-tight text-foreground">
-          Design Cube<span className="text-accent">.DC</span>
+        <a href="#home" className="font-display tracking-tight text-foreground flex flex-col">
+          <span className="text-2xl font-semibold">Design Cube<span className="text-accent">.DC</span></span>
+          <span className="font-body text-[10px] tracking-[0.2em] uppercase text-muted-foreground">We Make Your Home Beautiful</span>
         </a>
 
         {/* Desktop */}

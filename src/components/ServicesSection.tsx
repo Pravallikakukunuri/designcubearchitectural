@@ -1,37 +1,37 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Compass, Home, Building2, Palette, LayoutPanelTop, Wrench } from "lucide-react";
+import { LayoutPanelTop, Building2, Palette, Crown, TreePine, Box } from "lucide-react";
 
 const services = [
   {
-    icon: Compass,
-    title: "Architectural Design",
-    description: "Complete architectural planning from concept to construction-ready drawings for residential and commercial projects.",
-  },
-  {
-    icon: Home,
-    title: "Interior Design",
-    description: "Thoughtfully curated interiors that balance aesthetics, comfort, and functionality for modern living.",
+    icon: LayoutPanelTop,
+    title: "Floor Plan",
+    description: "Detailed and efficient floor plans designed to maximize space utilization and flow for every type of property — with 100% Vastu compliance.",
   },
   {
     icon: Building2,
-    title: "3D Visualization",
-    description: "Photorealistic 3D renders and walkthroughs that bring your project to life before construction begins.",
+    title: "Elevation Designing",
+    description: "Stunning exterior elevation designs that define the character and curb appeal of your building with modern aesthetics and structural precision.",
   },
   {
     icon: Palette,
-    title: "Renovation & Remodeling",
-    description: "Breathing new life into existing spaces with innovative redesign and structural improvements.",
+    title: "Interior Designing",
+    description: "Thoughtfully curated interiors that balance aesthetics, comfort, and functionality — transforming spaces into elegant living experiences.",
   },
   {
-    icon: LayoutPanelTop,
-    title: "Floor Planning",
-    description: "Detailed and efficient floor plans designed to maximize space utilization and flow for every type of property.",
+    icon: Crown,
+    title: "Premium Executions",
+    description: "End-to-end premium construction and finishing services ensuring the highest quality materials, craftsmanship, and timely project delivery.",
   },
   {
-    icon: Wrench,
-    title: "MEP & Structural Design",
-    description: "Comprehensive mechanical, electrical, plumbing, and structural engineering solutions for safe and efficient buildings.",
+    icon: TreePine,
+    title: "Landscaping",
+    description: "Creative landscape design solutions that enhance outdoor spaces with lush greenery, hardscapes, water features, and sustainable garden planning.",
+  },
+  {
+    icon: Box,
+    title: "3D Isometric",
+    description: "Detailed 3D isometric views that provide a comprehensive perspective of your project, helping you visualize every angle before construction.",
   },
 ];
 
