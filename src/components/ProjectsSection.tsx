@@ -85,7 +85,7 @@ const ProjectsSection = () => {
             transition={{ duration: 0.7 }}
             className="text-center mb-16"
           >
-            <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">Portfolio</p>
+            <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">About Us</p>
             <h2 className="font-display text-3xl md:text-5xl font-medium text-foreground">
               Featured Projects
             </h2>
