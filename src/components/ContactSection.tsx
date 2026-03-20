@@ -98,9 +98,9 @@ const ContactSection = () => {
             <div>
               <textarea
                 rows={5}
+                name="message"
                 placeholder="Tell us about your project... *"
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
+                required
                 className="w-full bg-background border border-border px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent transition-colors resize-none"
               />
             </div>
