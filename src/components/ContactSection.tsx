@@ -5,8 +5,6 @@ import { MapPin, Clock, Mail, Instagram } from "lucide-react";
 const ContactSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
