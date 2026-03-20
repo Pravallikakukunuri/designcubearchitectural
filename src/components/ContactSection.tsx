@@ -90,9 +90,8 @@ const ContactSection = () => {
             <div>
               <input
                 type="text"
+                name="subject"
                 placeholder="Subject"
-                value={form.subject}
-                onChange={(e) => setForm({ ...form, subject: e.target.value })}
                 className="w-full bg-background border border-border px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent transition-colors"
               />
             </div>
