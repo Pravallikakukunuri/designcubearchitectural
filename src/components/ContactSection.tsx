@@ -81,9 +81,9 @@ const ContactSection = () => {
             <div>
               <input
                 type="email"
+                name="email"
                 placeholder="Email Address *"
-                value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                required
                 className="w-full bg-background border border-border px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent transition-colors"
               />
             </div>
