@@ -66,7 +66,8 @@ const ContactSection = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
             className="space-y-5"
-            onSubmit={handleSubmit}
+            action="https://formspree.io/f/xzdjogrk"
+            method="POST"
           >
             <div>
               <input
