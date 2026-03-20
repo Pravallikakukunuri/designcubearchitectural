@@ -2,11 +2,12 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import project1 from "@/assets/residential-building.png";
-import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/living-area.png";
 import project5 from "@/assets/floor-plan.png";
-import project6 from "@/assets/project-6.jpg";
+import modularKitchenTop from "@/assets/modular-kitchen-top.png";
+import commercialTop from "@/assets/commercial-top.png";
+import livingAreaTop from "@/assets/living-area-top.png";
+import elevationDesignTop from "@/assets/elevation-design-top.png";
 import arch1 from "@/assets/arch-1.png";
 import arch2 from "@/assets/arch-2.png";
 import arch3 from "@/assets/arch-3.png";
@@ -44,17 +45,19 @@ import residential6 from "@/assets/residential-6.png";
 
 const architectureGallery = [arch1, arch2, arch3, arch4, arch5, arch6, arch7];
 const planningGallery = [floor1, floor2, floor3, floor4, floor5];
-const interiorGallery = [kitchen1, kitchen2, kitchen3, kitchen4, kitchen5, kitchen6];
-const livingAreaGallery = [living1, living2, living3, living4, living5, living6, living7, living8, living9, living10];
+const interiorGallery = [modularKitchenTop, kitchen1, kitchen2, kitchen3, kitchen4, kitchen5, kitchen6];
+const livingAreaGallery = [livingAreaTop, living1, living2, living3, living4, living5, living6, living7, living8, living9, living10];
 const residentialGallery = [project1, residential1, residential2, residential3, residential4, residential5, residential6];
+const commercialGallery = [commercialTop, project3];
+const elevationGallery = [elevationDesignTop, ...architectureGallery];
 
 const projects = [
   { image: project1, title: "Modern Residential Complex", category: "Residential" },
-  { image: project2, title: "Modular Kitchen", category: "Interior" },
-  { image: project3, title: "Office Space Design", category: "Commercial" },
-  { image: project4, title: "Living Area", category: "Interior" },
+  { image: modularKitchenTop, title: "Modular Kitchen", category: "Interior" },
+  { image: commercialTop, title: "Office Space Design", category: "Commercial" },
+  { image: livingAreaTop, title: "Living Area", category: "Interior" },
   { image: project5, title: "Floor Plan", category: "Planning" },
-  { image: project6, title: "Elevation Designs", category: "Architecture" },
+  { image: elevationDesignTop, title: "Elevation Designs", category: "Architecture" },
 ];
 
 const ProjectsSection = () => {
