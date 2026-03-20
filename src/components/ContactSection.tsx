@@ -106,10 +106,9 @@ const ContactSection = () => {
             </div>
             <button
               type="submit"
-              disabled={isSubmitting}
-              className="font-body text-sm uppercase tracking-widest bg-foreground text-background px-8 py-3 hover:bg-accent hover:text-accent-foreground transition-colors disabled:opacity-50"
+              className="font-body text-sm uppercase tracking-widest bg-foreground text-background px-8 py-3 hover:bg-accent hover:text-accent-foreground transition-colors"
             >
-              {isSubmitting ? "Sending..." : "Send Message"}
+              Send Message
             </button>
           </motion.form>
         </div>
