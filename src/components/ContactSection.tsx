@@ -1,36 +1,11 @@
 import { motion, useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { MapPin, Clock, Mail, Instagram } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
-import { toast } from "sonner";
 
 const ContactSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!form.name || !form.email || !form.message) {
-      toast.error("Please fill in all required fields.");
-      return;
-    }
-    setIsSubmitting(true);
-    const { error } = await supabase.from("contact_submissions").insert({
-      name: form.name,
-      email: form.email,
-      subject: form.subject,
-      message: form.message,
-    });
-    setIsSubmitting(false);
-    if (error) {
-      toast.error("Failed to send message. Please try again.");
-    } else {
-      toast.success("Message sent successfully!");
-      setForm({ name: "", email: "", subject: "", message: "" });
-    }
-  };
 
   return (
     <section id="contact" className="py-24 md:py-32 bg-secondary">
@@ -91,50 +66,49 @@ const ContactSection = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
             className="space-y-5"
-            onSubmit={handleSubmit}
+            action="https://formspree.io/f/xzdjogrk"
+            method="POST"
           >
             <div>
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name *"
-                value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                required
                 className="w-full bg-background border border-border px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent transition-colors"
               />
             </div>
             <div>
               <input
                 type="email"
+                name="email"
                 placeholder="Email Address *"
-                value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                required
                 className="w-full bg-background border border-border px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent transition-colors"
               />
             </div>
             <div>
               <input
                 type="text"
+                name="subject"
                 placeholder="Subject"
-                value={form.subject}
-                onChange={(e) => setForm({ ...form, subject: e.target.value })}
                 className="w-full bg-background border border-border px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent transition-colors"
               />
             </div>
             <div>
               <textarea
                 rows={5}
+                name="message"
                 placeholder="Tell us about your project... *"
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
+                required
                 className="w-full bg-background border border-border px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent transition-colors resize-none"
               />
             </div>
             <button
               type="submit"
-              disabled={isSubmitting}
-              className="font-body text-sm uppercase tracking-widest bg-foreground text-background px-8 py-3 hover:bg-accent hover:text-accent-foreground transition-colors disabled:opacity-50"
+              className="font-body text-sm uppercase tracking-widest bg-foreground text-background px-8 py-3 hover:bg-accent hover:text-accent-foreground transition-colors"
             >
-              {isSubmitting ? "Sending..." : "Send Message"}
+              Send Message
             </button>
           </motion.form>
         </div>
